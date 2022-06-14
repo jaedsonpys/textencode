@@ -32,7 +32,7 @@ String letters[26][2] = {
 
 String getEncodingCharacter(char character);
 
-void encode(String text);
-void decode(String textEncoded);
+String encode(String text);
+String decode(String textEncoded);
 
 #endif
