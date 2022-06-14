@@ -11,3 +11,14 @@ String getEncodingCharacter(char character) {
         }
     }
 }
+
+String encode(String text) {
+    String encodedText = "";
+
+    for(int i = 0; i < text.length(); i++) {
+        char character = text[i];
+        encodedText.concat(getEncodingCharacter(character));
+    }
+
+    return encodedText;
+}
