@@ -30,6 +30,7 @@ String letters[26][2] = {
     {"y", "mw"}, {"z", "lo"}
 };
 
+char getEncodingCharacter();
 void encode(String text);
 void decode(String textEncoded);
 
