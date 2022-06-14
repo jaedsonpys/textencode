@@ -33,3 +33,16 @@ String encode(String text) {
 
     return encodedText;
 }
+
+String decode(String encodedText) {
+    String decodedText = "";
+
+    for(int i = 0; i < encodedText.length(); i++) {
+        String characters = String(encodedText[i]);
+        characters.concat(encodedText[i + 1]);
+
+        decodedText.concat(getDecodingCharacter(characters));
+    }
+
+    return decodedText;
+}
