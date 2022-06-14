@@ -12,6 +12,17 @@ String getEncodingCharacter(char character) {
     }
 }
 
+String getDecodingCharacter(String characters) {
+    for(int i = 0; i < 26; i++) {
+        String lettersDecode = letters[i][1];
+        
+        if(lettersDecode == String(characters)) {
+            String decodeCharacters = letters[i][0];
+            return decodeCharacters;
+        }
+    }
+}
+
 String encode(String text) {
     String encodedText = "";
 

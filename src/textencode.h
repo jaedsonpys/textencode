@@ -31,6 +31,7 @@ String letters[26][2] = {
 };
 
 String getEncodingCharacter(char character);
+String getDecodingCharacter(String characters);
 
 String encode(String text);
 String decode(String textEncoded);
